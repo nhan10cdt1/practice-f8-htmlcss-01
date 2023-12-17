@@ -6,6 +6,11 @@
   --primary-color: #0f1b4c;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -60,16 +65,26 @@ a {
 
 /* Header */
 
+.header-sticky {
+  background: #e6f0ff;
+  padding-top: 26px;
+  position: sticky;
+  top: -26px;
+  z-index: 1;
+}
+
 .header {
   background: #e6f0ff;
   height: 736px;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar {
   display: flex;
   align-items: center;
-  padding-top: 38px;
+  padding: 12px 0;
 }
 
 .navbar ul {
@@ -105,7 +120,7 @@ a {
 }
 
 .hero {
-  margin-top: 130px;
+  margin-top: 100px;
 }
 
 .hero .infor {
